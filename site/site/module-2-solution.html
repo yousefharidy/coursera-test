@@ -9,14 +9,171 @@
 	margin: 0;
 	padding: 0;
 }	
+
 h1 { 
 	font-style: oblique;
+	margin:40px;
+	font-size: 20px;
+	text-align: center;
 }
+html {
+	display: block;
+}
+
+
+#p1 {
+	background-color:#232b4d;
+	width :300px;
+	border: solid 2px black; 
+    font-size: 15px;   
+    float: left;
+    margin: 10px;
+	padding: 7px 5px 5px 5px;
+    float: left;
+    position: relative;
+    color: white;
+
+}
+#child1 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width:35%;
+	padding:2px;
+	border: solid 2px 1px 1px 1px black;
+	background-color:#e8e8e8;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+
+}
+
+#p2 {
+	background-color:#232b4d;
+	width: 300px;
+	border: solid 2px black; 
+	font-size: 15px;
+	float: left;
+	margin: 10px;
+	padding: 7px 5px 5px 5px;
+	float: left;
+	position: relative;
+    color: white;
+
+}
+#child2 {
+	background-color: white;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width:35%;
+	padding:2px;
+	border: solid 2px 1px 1px 1px black;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+
+}
+
+#p3 {
+	background-color:#232b4d;
+	width: 300px;
+	border: solid 2px black; 
+	font-size: 15px;
+	margin: 10px;
+	padding: 7px 5px 5px 5px;
+	float: left;
+	position: relative;
+	color: white;
+
+
+}	
+#child3 {
+	background-color: #e8e8e8;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width:35%;
+	padding:2px;
+	border: solid 2px 1px 1px 1px black;
+	text-align: center;
+	color: black ;
+	font-weight: bold;
+
+
+}
+#content { 
+	margin-top: 15px;
+}
+#content2 {
+	margin-top: 15px;
+}
+#content3{
+	margin-top: 15px;
+}
+
+
+
+@media (min-width:992px)
+{
+	#p1 , #p2 , #p3 {
+        width: 31.33%;
+        float: left;
+        margin: 10px 1%;
+	padding: 7px 5px 5px 5px;
+    }
+}
+@media (min-width:768px) and (max-width:991px)
+{
+	#p1 , #p2 , #p3  {
+        width: 48%;
+        float: left;
+        margin: 10px 1%;
+	padding: 7px 5px 5px 5px;
+    }
+    #p3
+    {
+        width: 98%;
+    }
+
+
+}
+@media (max-width:767px)
+{
+#p1 , #p2 , #p3  {
+        width: 98%;
+        float: left;
+        margin: 10px 1%;
+	padding: 7px 5px 5px 5px;
+    }
+}
+
+
 	
 </style>	
 </head>
 <body>
 	<h1>Our Menu</h1>
-
+<div>
+	<div id="p1">
+		<div id="child1">chicken</div>
+		<div id="content">
+			Fried chicken with chicken planet special recipe, melted cheddar, smoked turkey, onion rings, American cheddar slices, pickles, lettuce, tomato, BBQ sauce, mayo sauce , 4 chicken pieces with chicken planet special sauce, coleslaw and fries , coleslaw and fries.</div>
+	</div>
+	<div id="p2">
+		<div id="child2">Beef</div>
+		<div id="content2"> Charcoal Burger
+----) 125 gm meat, cheddar cheese, ketchup, mayonnaise, onion, lettuce, tomato and pickled cucumber ,
+ 125 gm meat, cheddar cheese, ketchup, mayonnaise, onion, lettuce, tomato and pickled cucumber , 125 gm meat, cheddar cheese .
+</div>
+	</div>
+	<div id="p3">
+		<div id="child3">Sushi</div>
+		<div id="content3"> 100 New Style Philadelphia
+----) Shrimp tempura, smoked salmon, avocado and cream cheese . 93 Pink Panther
+----) Shrimp tempura, salmon, pink crab paste, avocado with Mori's sesame sauce, pink crab paste, avocado with Mori's sesame sauce.
+</div>
+	</div>
+	</div>
 </body>
 </html>
